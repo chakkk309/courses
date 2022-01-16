@@ -1,0 +1,188 @@
+One of the powerful things about networks as a conceptual framework
+is that they can help us think about many different kinds
+of social and economic processes.
+And let's start out by talking about a particular one
+that we see in many, many contexts, which is the way in which networks
+regulate the flow of information that we receive.
+A lot of what we find out about the world,
+a lot of what we know about the world, it actually
+comes to us through our friends.
+Our friends link us to the rest of the network.
+And through them, a lot of information gets filtered-- a lot of advice,
+a lot of recommendations, a lot of things
+that actually help us understand what's going on.
+And different friends play different roles in this process.
+And you can think about it in your own life
+how you rely on certain people for certain kinds of advice or information
+or help, and other people for other kinds of things.
+And that's something that we'd like to explore more deeply
+and to think about the different people who we're connected to
+and the different roles that they play.
+To set this up and to motivate it, let's actually
+start with a concrete story that is really
+going to turn out to illustrate this theme very nicely.
+It's a story about a sociologist named Mark Granovetter who
+early in his career was studying how people found jobs.
+And jobs are one of the things we often learn about through friends,
+and therefore, one of those things where the social network often
+plays a very important role.
+But when you talk to people, they often said
+they have learned about the job they currently
+had not through a close friend, but from an acquaintance.
+He would say, so you learned about it through a friend.
+They'd say no, an acquaintance.
+Why is that?
+Why were people so frequently saying it was acquaintances who had told them
+about the lead that led to the job they ended up currently having?
+It was sort of a puzzle.
+And it's a puzzle that kind of works at an interesting level in the network
+context because it relates something structural--
+how information gets to us about jobs-- to something interpersonal-- how
+close we feel to different friends, close friends versus acquaintances.
+In the end, Mark Granovetter found this amazing link between the two,
+between the structural and the interpersonal.
+And he defined this notion of weak ties and showed
+that they play this very important role in social networks.
+And so what I'd like to do is talk about weak ties,
+what they are, how they operate.
+And maybe from that we can sort of interpret this interesting situation
+with jobs and by extension, with really novel information in general.
+So in order to do this, we needed a few ingredients.
+And first, let's just think a bit more about where
+links come from in social networks.
+So some links, you meet these people very early on.
+They're friends you've had for a long time.
+You may not think about where those links came from.
+But others get formed over time, often by virtue of people you already know.
+So let's consider a very small picture of a network.
+Let's say there's this node, A here.
+And A knows some other people-- B, C, D, and E. Now, B and C
+don't know each other, but they have A in common as a friend.
+And so over time, we actually might expect that this link between B and C
+is going to form.
+So in some sense, B and C were separate and now they've been brought together.
+The network changed.
+And the social network is changing all the time as people meet each other,
+or even, I guess, as people have falling outs and it just could go away also.
+And we call this process by which the BC link forms, we call it triadic closure.
+Because in a sense, what we're seeing here is a triangle closing.
+AB and AC were two pieces of the triangle.
+And this BC link completes the triangle.
+And the principal of triadic closure in social networks
+is that if B and C have a friend in common, then
+there's an increased chance that a link will form between them.
+Now that's a slightly informal statement.
+But it's the same about relative tendencies.
+Edges form more when there are friends in common.
+Triadic closure is one of these empirical phenomena
+that gets observed a lot.
+It's very, very robust.
+And in part, that's because there are several reasons why
+triadic closure operates.
+Why is the BC edge more likely to form?
+Well, for one reason, B and C have an increased opportunity
+to meet each other because they have A as this common reference point.
+Similarly, A actually, in some context, has an incentive
+to bring B and C together because A may want his or her friends to know
+each other and may want to introduce them to each other.
+And that in the end also closes the triangle.
+And a third one is actually that if we know
+that B and C are both friends with A, then we know that at some level,
+they're kind of similar.
+They may live in similar places.
+They may have similar interests.
+And so even if they never actually realize that they both knew A,
+there are all sorts of reasons why that link might
+be more likely to form, simply because we know B and C are more similar.
+So that's triadic closure.
+And that helps explain why in fact social networks
+are very rich in triangles.
+If you look at a picture of a social network,
+you tend to see lots and lots of triangles though mutual friends.
+And often, that has formed through some kind of triadic closure.
+Now the next step in our understanding of how information gets you
+and the different roles people play is to think about parts of the network
+where triadic closure has somehow failed to happen.
+So let's take a look at this picture of a graph where
+we have these two tightly knit groups.
+Lots of triangles on the right.
+One is A, C, D, and E. And the other one includes this other friend
+of A, node B. And node B's in this other group.
+If you think about it, A has these four friends in the picture-- B, C, D,
+and E. But B is somehow different from C, D, and E.
+C, D, and E are this close knit group.
+And B is over in this other group.
+And that edge between A and B, we'll call a bridge.
+It's a bridge.
+And what a bridge is is an edge whose deletion
+would place the two ends, A and B in different components,
+sort of like the last link between them.
+So if I were to delete the AB edge, A and B would be in different components.
+We call it a bridge.
+Now if we think about our intuitions about networks
+that we've been building up and our intuitions about big social networks,
+if those intuitions have taught us anything,
+it's that bridges are probably very, very rare.
+It might seem like you and this friend that sort
+of very little you have in common, but it's very hard
+to believe that if you were to actually erase the friendship,
+the world would actually fall into two gigantic different pieces.
+It's more likely that there is some other way, some other path between you
+and this friend, it's just longer and sort of hard for either of you
+to perceive.
+So let's draw this larger picture.
+Maybe actually that picture that we drew is
+embedded in this bigger picture of the social network which
+has all these other nodes.
+And we now notice, in fact, although A and B
+feel like there's this bridge between them, in fact,
+there is this other way through F, G, and H-- something that neither of them
+may realize this because neither of them knows G, for example.
+We're going to call that, in this case, we're
+going to say that the AB edge is not a bridge, but a local bridge.
+So a local bridge is an edge where the two
+endpoints have no neighbors in common.
+The two nodes, A and B, can't directly perceive
+that there's this other shortcut, but they're
+in fact is this other way around.
+So an AB edge is a local bridge if A and B have no neighbors in common.
+Now let's come back to how information gets to you.
+And the point is that if I think about A's friends-- now A's up to 5 friends
+here, I guess.
+They've got B, C, D, and F. It's still the case
+that somehow B is special because B is over in this other group.
+So think about this from the point of view
+of information coming to A. B knows stuff probably
+that's circulating around in B's own group that none of A's other friends
+know.
+So C, D, and E are these close friends and they want to share a bunch of stuff
+with A. And if A's looking for a job, in particular,
+C, D, and E are really motivated to help A find a job because they're
+close friends and they want A to find a job, be successful, and so forth.
+But the problem is they tend to know the same things that A does.
+And so if A doesn't know about job leads, they probably don't either.
+Whereas B, who's this sort of friend over in this other group,
+actually has access to a bunch of information
+that A can't directly perceive.
+And so if you think about job leads and other kinds of novel information,
+it seems likely that it's going to often be filtered in through nodes like B who
+have access to this other stuff.
+But of course, we need to come back to what actually came out
+of Mark Granovetter's interviews about jobs.
+People didn't say, oh, I found out about my job via a local bridge.
+They said I found out about it from an acquaintance.
+And so we need to complete this link.
+We need to relate this structural picture we have,
+which feels kind of right, this role of local bridges,
+to the interpersonal picture, this picture of acquaintances
+versus close friends.
+And so if we're going to do that, we're going
+to need a notion of distinguishing edges into close friends
+versus acquaintances, something we haven't done so far.
+And then we're going to need to understand
+how a triadic closure operates when we're
+in this richer world of close friends and acquaintances.
+And once we've done that, we'll actually see that we have all the ingredients we
+need to actually resolve this puzzle and understand why it's often
+you're distant acquaintances who are providing you
+with this novel information.

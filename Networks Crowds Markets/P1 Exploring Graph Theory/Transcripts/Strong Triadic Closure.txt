@@ -1,0 +1,193 @@
+We've been talking about how we can use networks and social networks,
+in particular, to understand how people receive novel information,
+things like job leads.
+And we had gotten to the point of having this insight that there's
+this idea of a local bridge in the network.
+Someone you're connected to where you have no other friends in common.
+And such a person probably belongs to different social groups and travels
+in other circles that you don't.
+And therefore, they're probably often a source of novel information
+that you don't have access to.
+What we'd like to do is relate this idea of you
+being connected by someone to someone by a local bridge
+to this distinction between close friends and acquaintances,
+which is what, for example, sociologists, like Mark Vandevetter,
+discovered was an important distinction when they interviewed people
+about how they found jobs.
+OK.
+So we'd like to go back to a graph we've been looking at.
+It has a local bridge in it.
+There it is, between A and B. And we'd like to annotate the edges,
+we'd like to divide them into two types-- close friends
+and acquaintances.
+Or in the language of social networks research
+in this area, strong ties and weak ties.
+Strong ties connecting you strongly to close friends, weak ties
+to more distant acquaintances.
+And I've labeled it sort of arbitrarily, but maybe a bit
+intuitively that it sort of feels like if B is over in this other social group
+travels those circles, maybe B is a weak tie.
+And that's exactly the thing that we'd like to pursue.
+Right?
+To what extent can we actually say that there's
+some reason why we should expect these things, these connections, that
+bring us new information to be weak ties often?
+OK.
+So in order to justify why weak ties play an important role here,
+why distant acquaintances somehow have something to do with local bridges,
+I want to first extend the idea of triadic closure, which was just
+about an edge forming when the two ends had a friend in common.
+I'd like to extend that to also incorporate
+the notion of strong ties and weak ties.
+And the idea here is going to be to say that we should expect
+that if we know which has the strong ties which has the weak ties,
+that triadic closure should operate particularly powerfully if I have
+two close friends who don't know each other.
+Right?
+If I have two close friends who don't know each other,
+that seems like a sort of particular time
+when they might end up becoming friends, for sort of all the reasons we talked.
+Right?
+All the bases for triadic closure should operate more powerfully
+if these are two close friends of mine.
+I have more incentive to bring them together.
+They have more opportunities to meet each other.
+And so we'll think about triadic closure in the presence
+of trying weak ties as something we want to focus particularly on.
+What are the implications when I have these two strong ties?
+So I'll say that, in particular, nodes should
+obey this thing called the strong triadic closure property.
+And what I'm going to do is actually define it
+in this very sort of clean mathematical way which is clearly
+going to be an oversimplification of reality.
+What we'd like to do is through that oversimplification
+try to derive some consequences actually at a mathematical level, just
+reasoning about graphs.
+OK?
+So it's actually in a way easier to say what
+it would mean for a node to violate the strong triadic closure property
+than to satisfy it, so let me talk about what I mean to violate.
+I'll say that a node a violates the strong triadic closure
+property if it has strong ties to two nodes, B and C,
+but there is no edge between B and C. That
+would be a violation of strong triadic closure
+because that triangle failed to close.
+So for example, if I had drawn this example
+graph in a slightly different way.
+And I were to put in, for example, strong ties from A to F
+and a strong tie from A to E. OK.
+So here we have A to F, A to E, those are both strong ties.
+That would indicate a violation.
+A is violating the strong triadic closure property
+because A has two friends linked by strong ties, E and F,
+and there's not even a weak tie between them.
+There's no edge between them.
+That's strong triadic closure.
+And we'll simply say A node satisfies a strong triadic closure
+property if it doesn't violate.
+Now it's obvious that strong triadic closure is too powerful a notion
+to actually hold in reality.
+It's requiring that every time you have two close friends,
+they should at least distantly know each other.
+And you can probably think of examples from your own life
+where that's not quite true.
+But again, we're trying to intentionally simplify
+things for the sake of making a clean mathematical definition.
+Right?
+So in the same way that maybe in a intro physics class
+we might try to assume away the effect of air friction
+when we go to analyze the flight of a baseball through the air.
+Here, we're sort of assuming away a bunch of messiness and saying,
+suppose we have the absolute starkest thing here,
+we have strong triadic closure.
+Using strong triadic closure, we can actually
+now make the link between the structural property, local bridges,
+and the interpersonal property of weak ties.
+And we can actually do it by reasoning mathematically about the graph.
+So unlike, for example, when we were talking about the global friendship
+network and we were sort of speculating, here we're not going to speculate.
+Here we're going to actually start with some very concrete definitions--
+a graph, it's edges are divided into strong and weak ties.
+And say all nodes satisfy the strong triadic closure
+property, which, again, is a mathematical definition.
+We then would like to mathematically derive
+a relationship between local bridges and weak ties.
+And here is that relationship.
+And we'll phrase it in the form of a claim.
+Suppose node A satisfies the strong triadic closure property.
+Other nodes may or may not, but A does.
+And suppose that it's involved in at least two strong ties.
+So that's kind of a very mild assumption.
+It just says A has at least two close friends in the world.
+Then here's the conclusion.
+Any local bridge it is involved in must be a weak tie.
+So here, for example, we've drawn this network again.
+Now we've labeled the A to F edge actually so that it's a weak tie.
+So A, in fact, in this picture satisfies strong triadic closure.
+We can check that because it's three strong ties with the C, D, and E ,
+and they are all connected.
+So A satisfies strong triadic closure.
+It's involved in at least two strong ties.
+And it is involved in a local bridge to B, that is indeed a weak tie.
+We'd like to argue that must be true in general.
+If A satisfies strong triadic closure, at least two strong ties,
+any of its local bridges must be a weak tie.
+And here's how we're actually going to try proving that mathematically.
+We're going to argue by contradiction.
+We're going to say, all right, suppose by way of contradiction
+that A has a strong tie to B, and this A-B edge is a local bridge.
+What we'll try to do is get to a contradiction, a contradiction
+to our assumption that A satisfies strong triadic closure.
+And through that contradiction, we'll show
+that this assumption couldn't hold.
+And in fact, therefore, that this A-B local bridge must be a weak tie.
+OK.
+Well so we don't have a lot to go on when
+we reason by contradiction because we're only assuming very few things.
+But one thing we're assuming is that A has at least two strong ties.
+Well we see one strong tie to B. But there
+must be at least one other lurking out there somewhere.
+Let's say it's sum node C. So we've drawn here
+there's a strong tie to node C. OK.
+The next step, we also know that the A-B edge is a local bridge.
+So we know that there is no edge between B and C. Why is there no edge?
+Because if there were an edge between B and C,
+then A and B would have C as a common friend
+and it wouldn't be a local bridge.
+OK.
+So there's no B-C edge, but there are strong ties.
+A has strong ties to both B and C with no edge.
+That violates the strong triadic closure property.
+And so, in fact, it does contradict our assumption
+that A satisfied the strong triadic closure problem.
+And that's the end of the proof.
+It shows that under our assumptions any local bridge that A is involved in
+must be a weak tie.
+So this claim actually establishes at a formal mathematical level the link
+that we wanted at a more intuitive level.
+Right?
+The local interpersonal property of weak ties
+that this person's an acquaintance, and the structural property
+of local bridges, that this edge reaches into another social group.
+It's a source of novel information.
+Now, again, I have to stress.
+We phrased this thing very, very starkly to be
+able to prove a mathematical statement because we
+said with a strong triadic closure it's a very strong property.
+But we can also try to learn from it.
+What is it telling us at a more qualitative level?
+Roughly, the point behind the proof is saying
+that local bridges tend to be weak ties because if they were strong ties,
+then Triadic Closure would operate around them
+to shortcut that local bridge to give the two ends mutual friends
+and it would thereby no longer become a local bridge.
+So those local bridges actually persist over time.
+They're likely to be weak ties.
+That's why they remain local bridges.
+And in turn, they connect us to these people
+who travel in other circles, who have novel information, who
+can give us things like new job leads.
+And so this way in which these weak ties link us
+to these other parts of the network that,
+in the end through this kind of structure,
+turns out to be the surprising strength of weak ties and social networks.

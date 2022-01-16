@@ -1,0 +1,178 @@
+We've been talking about examples of networks in many different domains
+and how networks are really pervasive in a lot of different applications--
+in science and in society and in everyday life.
+And so now, it's useful, to talk about them further,
+to begin delving into the mathematical definitions around them.
+So to start out, if we want to talk about networks,
+then we need the language of graph theory--
+the study of how things are connected and what those connections imply.
+So a graph is simply the mathematical term
+for the object that represents a network.
+A graph consists of two things-- a set of nodes,
+which are the objects that we're going to connect,
+and then the edges, which are things that connect certain pairs of nodes.
+So for example, in a social network, the people could be the nodes.
+Those are the things being connected in the social network.
+And then the friendships are the edges.
+So if two people are friends, we say there's an edge between them.
+So certain things in a graph have edges connecting them,
+and certain other things don't.
+To make this more concrete, let's try drawing an example.
+And let's pick something that's actually small enough and self-contained so we
+can actually look at it and play around with it.
+So this won't be a social network.
+This will actually be a physical communication network.
+It's actually the internet from late 1970.
+So the internet was quite young in 1970.
+And it was a bit smaller back then than it is today.
+In particular, it actually only had 13 nodes.
+So the internet in late 1970 was architected as basically these two
+rings.
+There was an east coast ring with 6 nodes.
+It had a mix of research universities and government-funded labs.
+So on the east coast, there was MIT.
+There was Harvard.
+There was Case Western.
+Those Carnegie Tech, which later became Carnegie Mellon.
+And there were these labs, BBN and Lincoln Labs.
+And the west coast was a similar mix of labs and research universities.
+There was Stanford, UC Santa Barbara, UCLA, and Utah,
+and then labs drawn here as SRI, SDC, and RAND.
+OK.
+13 nodes-- and that's all there was.
+And there were edges.
+There were edges between certain pairs of them.
+So for example, you see here that MIT was connected to BBN.
+Harvard was connected to BBN.
+Those were relatively local links.
+And then there were these very long range links-- MIT out
+to Utah, BBN out to RAND-- that crossed much of the country.
+And these links were actually, in a sense, physical objects.
+When you put a packet in at MIT and it had to get to Utah,
+it actually went down physical cable and came out
+the other side of the computer that was at Utah.
+So these were, at some level, computers wired together
+with physical infrastructure, taking advantage of, of course,
+all sorts of other complicated infrastructure,
+other national communication networks like the phone system, which
+existed at the time, but definitely a network
+in and of itself with these 13 nodes.
+And when you look at it, you can appreciate
+some of the connectivity and this idea that there were these two rings
+and they had these two long haul links.
+And that all comes through when you draw the picture of the 13 node
+internet in 1970.
+one Thing that also is important to appreciate is when you draw a network
+or you draw a graph like this, all that matters is what's connected to what.
+It doesn't matter where I put the nodes.
+In particular, they're drawn here purely to look good, to be conceptually clear.
+But I could have drawn them some other way.
+And in particular, for example, although the east coast and west coast rings
+are suggestive, if you think about the geography of the United States,
+this is not actually other they're laid out on a map.
+So for example, the East Coast ring-- you would actually
+have to fold over to put Case and Carnegie to the west of MIT, BBN,
+and Harvard.
+OK.
+So really, what matters is the connectivity.
+Now, what I wanted to do here is talk a little bit
+about some of the basic definitions around graphs.
+And we can illustrate these definitions with the graph that we have here.
+And I'm going to run through four or five definitions.
+And they're going to be the bedrock of what
+we're going to be talking about-- the language we're
+going to use when we think about graphs.
+Maybe the most basic definition that we're going to use
+is the idea of a path.
+So when I look at a network, the obvious question that you should ask yourself
+is how do I get from point A to point B if it's a communication network
+or transportation network.
+That's the question that comes to mind.
+The internet was there to send data from a computer at one place
+to a computer at another place.
+And so, for example, if I wanted to get from the internet node at Lincoln Labs
+to the one at RAND, I could say, how should I
+get there in a sequence of hops?
+So a packet Lincoln could go, for example, through MIT, then onto Utah,
+through SDC, and down to RAND.
+And that would be a four step path that would get me there.
+We'll say that a graph is connected if there's
+a path between each pair of nodes.
+And certainly, if you have a communication network,
+the goal would be for it to be connected.
+You want to be able to get from anywhere to anywhere.
+And we'll also talk about the lengths of paths.
+Some paths might be better than others because they're shorter, for example.
+And so we if number of hops is our objective,
+the thing we we're really seeking to improve, then, for example, if we were
+to go from Lincoln Labs to RAND via MIT, Utah, SDC-- so that's four edges--
+we'll say that that's a path of length four.
+The length will be the number of edges it contains.
+And if you look for a second, you'll notice
+that's actually not the shortest path from Lincoln to RAND.
+If we wanted the path of minimum possible length,
+we should take a different route through this-- Lincoln to MIT to BBN onto Rand.
+And that's only three edges.
+So that has a length of three.
+And if you look a little more closely-- you look at Lincoln
+and RAND-- you'll notice there is no two edge path between them.
+You can just try that out.
+And so, in fact, Lincoln, MIT, BBN to RAND
+is actually the shortest path between them.
+And so that defines the natural notion of distance on our graph.
+We'll say that the distance between two nodes
+is the length of the shortest path from one to the other.
+And so again, we have to remember that length here
+and distance really means in the number of hops that you take in the network.
+It's not a physical or geographic concept.
+And so in particular, Lincoln and RAND are pretty far apart.
+They're on opposite coasts of the US.
+But in the graph, they're a distance of three, in the same way
+that, say, Lincoln and Harvard are much closer
+to each other-- they're both in the Northeast US--
+and yet, because they're on opposite sides of that six node ring,
+they too have a distance of three.
+So a distance of three on the graph could be very different from distance
+in the physical world.
+There's one last definition that's useful to talk about,
+which is if a graph is not connected, then
+we'd like to understand the ways in which it breaks apart
+into separate pieces.
+So imagine, for example, we have this 13 node internet
+and we're thinking about the idea that links might fail, for example.
+And that's certainly something that you worry
+about when you build a communication network.
+So a construction crew starts taking up a sidewalk to work on the water system,
+for example.
+And they might accidentally cut through some gigantic telecommunications cable
+and actually remove an edge from some communication network.
+Now, if you look at this 13 node internet,
+people were clearly thinking about that, because-- you can try it out.
+If you were to destroy any one edge in this graph,
+the graph would actually still be connected.
+There's always another way to go.
+Even across the country, there were these two ways.
+There's MIT to Utah and there's BBN to RAND.
+But of course, if you actually were to lose both of those long haul links,
+for example, the graph would fall apart.
+And the two things it falls apart into we'll call connected components.
+So when a graph is not connected, we're going to talk about its components.
+And a component is a set of nodes with two important properties.
+One is that the set of nodes is internally connected.
+So if I were to look at it as just a graph in itself,
+it would be a connected graph.
+But it also has no edges to the rest of the graph.
+So it's as big as it can be in the sense of being connected.
+Everything else is somewhere else and is not linked by edges.
+So in this graph in particular, if I were to remove those two cross country
+links, we would have a six node connected component on the east coast
+and a seven node connected component on the west coast.
+So the ideal would be to take these basic vocabulary
+items-- the notions like path, connected, length, distance,
+component-- we're gonna take those, and those are going to our basic working
+ingredients for reasoning about graphs in this first pass on them.
+And so what we actually want to do next is
+think about how can we take these ideas and start
+thinking about graphs in a more abstract way, and in particular,
+to get leverage on graphs that may be too big and too
+complicated to simply draw and work out by hand.

@@ -1,0 +1,117 @@
+So far, we talked about networks of friends.
+In our networks links suggested positive relations.
+Some were stronger and others were weaker, but they were all positive.
+But positive people can actually have negative relations, too.
+Sometimes, there's agreements or outright conflicts or antagonism.
+What we're going to do next is study networks
+with both positive and negative links.
+What we want to understand is how these kind of networks look like.
+We're going to start with very small networks, like a group of three people.
+And we want to understand how typical friends and enemy relations work
+on very small groups, just three people.
+Analogous to how we want to understand three people with friends--
+and trying to get closure was one example
+of how that relation worked with three people.
+And in this case, once we understood the small networks,
+we're going to be able to see that it implies a global structure of how
+the network can look like.
+So let's start with some examples.
+So this is little network here on just six nodes.
+And I indicated with plus and minus signs and colors
+of which relations are positive and which relations are negative.
+And this is the kind of typical network that we want to think about.
+To give you a context of where this kind of thing commonly arrives-- maybe
+one powerful example is coming from World War II, where countries somehow
+aligned themselves into alliances.
+And Germany was well aligned with Japan and the US was well
+aligned with Great Britain, but World War II
+can be though of s a tension between these two groups of countries.
+So in this case, the graph is not between people, but instead
+between countries.
+You can also think of this in a context of company relations,
+like, for example, the CEO likes one of the VPs more than the other VP,
+or maybe he has issues with one of the VPs.
+But it turns out that VP has a very positive connection with the board that
+causes tensions in the company's life.
+So this is another situation where some positive and some negative relations
+are present and describe a network structure.
+So we want to start with very, very small groups-- just three people.
+Generally, we'll assume that we're thinking
+about a really small group, such as a company or even
+countries in the world, where every pair of countries or every pair of people
+in a small company will have some relation.
+Some are positive and some are negative.
+But they will all know each other.
+So here is a group of just three people--
+I think a very typical kind of group.
+This is persons A, B, and C. And it turns out they're all friends.
+And we're going to classify this as a natural, balanced, simple relation.
+Its common in the world and just represents a group of friends.
+In contrast, if I think about this kind of relations,
+where C is friends with both A and B, but A and B
+have tension or negative relations to each other, this kind of awkward.
+It's certainly unpleasant for C, and maybe even unpleasant or awkward for A
+and B also, who while apparently intensely disliking each other,
+have a shared friend.
+So we're going to classify this kind of relation
+as causing good group tensions, or that it's unbalanced.
+And what one observes in real-life situations
+is that these kind of relations between three people often results themselves.
+Either C convinces A and B to actually become positive towards each other
+or become reasonably good friends anyhow, or another thing can happen,
+and it could be that one of the relations turns negative.
+So if you look at this network, there is negative relations of B
+both with A and C, but A and C are friends with each other.
+If you think about this, this is also much, much more common.
+The way I would think about it is an antagonistic relation
+between one group against one person B. A and C lined up as friends,
+and they together dislike B-- also pretty common.
+And let's think of this as a balanced relation, balanced network.
+It happens in real life a lot.
+And there's no reason this relation can change.
+It can go on for a long, long time, keeping this kind of relation.
+So we almost had all three possible relations.
+There's one more left-- I guess the all negative one.
+That is, A, B, and C all instances they dislike each other.
+And I'm thinking this one is also unbalanced.
+It's not really that it's unpleasant particularly for anyone,
+other than disliking people might be unpleasant.
+But rather, there is an opportunity here-- an opportunity for two people
+to line up with each other.
+And if you think about this, I guess maybe
+one common example-- so for example, A and C can line up with each other,
+and we can go back to the previous version
+where A and C are going against B together.
+So one common example to think about this kind of tradition
+is what happened in World War II, where, remember,
+the US and Great Britain was also aligned with USSR.
+Actually, with more recent hindsight, this is harder to remember or explain,
+but I think you can think of it as they had a shared enemy.
+And they aligned themselves to work against the shared enemy.
+So so far, we went through the three little examples.
+We saw our balanced and unbalanced triangles or relations of three people.
+And what we want to think about next is what
+are bigger examples of graphs with balanced and unbalanced relations.
+So one typical example of a balance graph
+is where all relations are positive.
+This is just a giant group of friends.
+And indeed, every triangle in this graph is balanced.
+Another simple example for a really large graph or arbitrarily large graph
+where all triangles are balanced would be
+a graph of with two polarized groups.
+So I'm suggesting a graph here with A, E, F, and C
+are a tight group of friends.
+And D, G, and B also are two groups of friends.
+But these two groups are polarized.
+They're are negative on each other.
+There are many examples of these kind of scenarios in life.
+And just to mention a few from politics, you
+can think of the Democrats against the Republicans
+or the pro-choice people against the pro-life people.
+There are many examples of this sort, even in our everyday life.
+What we're going to ask next is what life structures are possible--
+what are graphs like when every triangle is balanced?
+Does that imply a global structure of the kind we just
+saw with two groups or just one group?
+Or are there other kinds of structures possible or other
+big graphs possible that don't satisfy this structure?

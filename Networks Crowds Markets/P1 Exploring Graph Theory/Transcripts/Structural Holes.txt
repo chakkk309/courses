@@ -1,0 +1,112 @@
+In our discussions about social networks,
+a useful conceptual picture has been emerging of social networks
+as consisting of tightly-knit communities
+with the bridging links that go between them.
+So in particular, an edge between two people in a social network
+can either be deeply embedded in one community-- these two people belong
+to the same community, they have a lot of common friends--
+or it can have more of a bridging structure.
+It connects two people who fundamentally are rooted in different communities.
+And you can think in your own life, how some of your connections
+stay within communities that you travel in a lot,
+that you're very comfortable with.
+And other of your connections to people actually
+go outside and span a lot of social distance.
+One other insight that begin to emerge as people thought about this--
+and was really a style of analysis pioneered
+by the sociologist Ron Burch-- was that in this configuration,
+some people have access to many types of bridging links
+and other people have access to many fewer.
+In other words, people often stake out different
+positions in the territory of the social network,
+so that some people stand essentially at the boundary of a community
+and they link to many other communities.
+And other people often can sit at the center of a community.
+And so many of their connections are all within that one community
+And so following Ron Burch's expositional lead
+in talking about this, let's think about a story involving managers
+within organizations, say within a company, and the different experiences
+that two people in this very same organization,
+at the very same job description, could have
+based on their position in the social network.
+And so the story I want to talk about involves a social network-- really,
+sort of a schematic cartoon picture of a social network.
+And I've drawn it here.
+And you'll B, immediately, you see that this organization-- or at least,
+the set of managers in this organization--
+forms three conceptual clusters.
+There is the one containing A, B, E, and F, and these two other unlabeled nodes.
+There's the cluster the contains C, and the cluster that contains D.
+And we see that nodes A and B have staked out
+these two different types of positions that I was just talking about.
+A is at the center of a cluster, and all of A's friends come from that cluster--
+all the people that A talks to within the organization.
+B, who has the same number of connections as A-- they both have
+five-- but B is sort of at the border of this cluster
+and reaches out into other ones.
+And so three of the people B talks to regularly, A, E, and F,
+are in what's sort of B's home community.
+And then C and D reach out to other communities.
+And the point of this style of analysis is that A and B actually
+have very different sources of relative advantages when
+they think about how they can operate within this organization.
+So from A's point of view, the advantage of being deeply embedded
+in this cluster-- to have these edges that
+have many mutual friends surrounding them--
+is that you can often get greater trust in your interactions.
+So when A interacts with E, or when A interacts with F or with B, what we see
+is that all of these interactions are effectively
+chaperoned by many mutual friends that they both have.
+And so, in the event of misbehavior by either of them,
+there are many people who can kind of observe and disapprove.
+And that effectively creates an incentive
+for these kind of interactions to go smoothly,
+to go well, because they're embedded in this social community
+with lots of people effectively watching through the mutual friendships.
+B, on the other hand, has riskier interactions.
+His interactions with A, E, and F are embedded in that cluster.
+But the interactions with C and D have a very different nature,
+because there effectively is no third party who
+can witness that BC interaction or that BD interaction.
+And as a result, its riskier.
+In the event of misbehavior, there's no comparable opportunity
+for subsequent social sanctions by anyone.
+And so, there's less incentive for everybody to behave well.
+There's less trust placed in those kind of interactions.
+On the other hand, B has this different form of counterbalancing advantage.
+And in Ron Burch's language, what B is doing
+is spanning a set of structural holes in the organization.
+We can think of a structural hole as this kind of deliberately informal term
+for the empty space in the social network
+where links have failed to form.
+So between C's cluster and D's cluster, for whatever reason,
+links have not formed.
+And so B is kind of the unique broker between those two clusters.
+And that position of brokerage for B actually gives B a lot of benefits.
+For one thing, it can be an amplifier for creativity.
+The argument is that B is the only person who's
+exposed to the ideas that originate in C's cluster and in D's cluster.
+And so if someone is going to have an insight, a new way
+to combine those ideas, it's going to B. And similarly, it also
+gives B a source of power.
+B is a effectively a gatekeeper, regulating the flow of information
+that comes from C's cluster and D's cluster
+into B's own home cluster that contains A, E, and F. Than can make
+B a particularly valued member of the organization in ways
+that the other people can't be.
+What we see is that there's these counterbalancing
+contrasts-- A versus B. A has embedded interactions.
+It has a lot of trust in these interactions.
+B has these riskier interactions that can be greater access to information,
+ways of combining information in novel ways.
+And empirical studies of organizations in a number of cases
+has found that people who play the role of B, who span structural holes,
+can often have a number of concrete benefits in the organization--
+that their ideas can be taken up more quickly, that they can be promoted
+and advanced through the organization more quickly.
+And so by thinking about the social network and the way in which links
+are divided across clusters and within clusters,
+we can begin to think about some of the higher-level outcomes that
+arise through the social processes that take place
+in these structures-- in organizations, in companies, in schools,
+and among groups of friends.

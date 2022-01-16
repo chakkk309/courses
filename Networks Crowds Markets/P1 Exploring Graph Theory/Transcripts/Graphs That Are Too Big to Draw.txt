@@ -1,0 +1,205 @@
+We've now seen some of the basic definitions for graphs-- the idea
+that there can be a path between two nodes,
+the graph is connected if every pair of nodes has a path between it.
+And when it's not connected, we've talked
+about it falls apart into connected components, these pieces that
+are internally connected with no edges between them.
+And we used all this to analyze a graph that was small enough
+that we could draw it completely by hand--
+the young internet in the late 1970s when it only had 13 nodes.
+Now we see how we'd use this to reason about a graph that's
+much too big to draw, and how we can use some of these definitions
+and still talk about the graph and actually
+learn about it, even though we're not really
+going to be able to draw pictures of it.
+There are a bunch of graphs we could do this with.
+And actually, as we go on, we'll see that we're
+going to be able to do this with a lot of different graphs.
+I want to start with one that is sort of intuitively compelling.
+We all have our own kind of sense of it, our own intuitions about it,
+and that's what I'll call the global friendship network.
+This is simply a graph where there's a node for each person on earth
+and there's an edge between every pair of people who are friends.
+And we can define friends however we want here.
+Let's say friend means you sort of know them on a first name basis.
+They know you on a first name basis.
+If you passed each other on the street, you
+would likely get into a conversation, that kind of notion of friend.
+OK.
+So let's ask some questions about this graph.
+First of all, I should stress that this is not
+a graph that anyone has written down.
+We think about big networks like Facebook
+which has over 1 billion people or the global phone network.
+These are approximations to the global friendship network,
+but they're not quite there maybe for two reasons.
+One is that not everyone is on these systems, obviously.
+And the other is that friendship doesn't quite equal talking on the phone.
+It doesn't quite equal being connected by a friend link on Facebook.
+So let's think about the real global friendship network,
+just so we can do this thought experiment.
+And when we think about it, I should stress,
+we're going to speculate a little bit.
+And here it'll be OK to speculate.
+Let's just use our intuitions and think how these definitions would play out.
+So as a starting question, is the global friendship network connected?
+It's a reasonable question to ask.
+So is it the case that every two people, there's some path through friendships.
+Not only are they friends with each other,
+but is there a path of friendships from one to the other?
+And if you think about it, it feels like the answer is probably no.
+For example, if there was simply a single person
+on the earth who just had no friends.
+Maybe they just don't like people.
+Maybe for some reason, maybe they're old and their friends
+have died or something.
+But one way or another, a single person with no friends
+would make the graph unconnected.
+And that's a way to appreciate how brittle this notion of connectivity is.
+A single node can negate it-- someone who no friends.
+Or if you want a small secluded group, this canonical notion
+of a remote village that somehow has no contact to the outside world,
+that would be a very small component with more than one person,
+but a separate component.
+So if the graph is not connected, then what do its components look like?
+What do we have?
+So maybe there's some one node components,
+these people with no friends.
+And maybe there's some very small ones like these if they're remote villages
+and they haven't been reached by the rest of the world.
+But what about other components?
+So how about the component you're in, for example.
+So for that, let's think about you.
+And although I said the whole graph was too big to draw--
+and that's certainly true-- we can at least
+start to draw a cartoon version of the picture around you.
+So there's you.
+And what is your part of the network look like?
+What are your friends?
+Well, let's just speculate some more.
+So for example, maybe you have friends from childhood
+and they know each other, of course.
+So there's you and two friends from childhood,
+and you form this whole triangle right here.
+Maybe you have a job with coworkers.
+You have a boss.
+Those people know each other, so you and your coworkers, your boss,
+you all know each other.
+And that's sort of a different lobe of your friend neighborhood.
+It's the same over there.
+And maybe family members, maybe a sibling, a parent.
+They're in there too.
+And of course, they might have interesting relations
+to other parts of your life.
+So your sibling might, for example, play this interesting role
+where they know some of your friends from childhood.
+They know some of your coworkers.
+They know your parent, presumably.
+And so that person kind of has an interesting shape in the network.
+So the component you're in certainly has all of that.
+But that's still not very big.
+Let's think about that in the entire network.
+So let's say you and let's think about one of your coworkers.
+Let's pick a coworker who was born in a different country, moved
+moved recently, and is now working with you, lives close to you,
+but grew up very far away in the world.
+Think about that coworker's parents who still live back in the country
+where they grew up.
+These are people who don't speak the same language as you
+or are quite far around the world.
+But you do have this person in common, this friend that you both know.
+But now think about your coworker's parents' friend.
+So they have a friend.
+This too is someone who grew up somewhere around the world,
+has no language in common with you, and no longer even has people
+in common with you.
+So you could be traveling around the world somewhere.
+You could end up sitting next to them on a train.
+And you'd be sitting next to this person who
+is maybe significantly older than you and looks different from you,
+dresses different from you, has no language in common.
+You'd really have absolutely no idea there
+was anything you had in common with this person,
+despite the fact that there's actually this path of length three between you.
+And we can expand out in almost any direction like this.
+And what we're starting to learn that the connecting component that
+contains you is a really very big component.
+It includes people from all over the world, all different cultures,
+all different age ranges.
+It seems to actually contain some very large fraction of the entire world.
+And so one way to say this, again, being actually deliberately informal
+is that you're part of what we call a giant component.
+And in fact, lots of big, complex networks
+have what's called a giant component, which
+is a single connected component that contains
+a large fraction of all of the nodes.
+So that's a useful insight about complex networks.
+And we got it again, by speculating, but we've
+been speculating on pretty safe grounds.
+It seems pretty clear that there really is this giant component.
+And in fact, if you go into a big phone network or into the Facebook graph,
+you in fact see this giant component.
+Now here's a question.
+Could there be two giant components in the graph?
+Could the global friendship network have two giant components?
+And the answer, if you think about it, seems almost surely to be no.
+We think about big societies that separate themselves
+from the world, governments that have closed
+their borders to the rest of the world.
+You think maybe that's a big component.
+But people still do travel there and someone there
+might know someone near where you live.
+And the point really is that a component, it's internally connected,
+but it has to have no edges out of it.
+And the thing with two giant components would be a single edge between them
+would bring them together and would turn them into a single component.
+So again, this notion of component is also
+sort of brittle in that two big components, one edge would negate that.
+It would turn them into a single component.
+Maybe like having these two giant clouds of stuff
+next to each other and a single spark brings them together,
+and the whole thing would burst into a single component.
+And so it seems almost sure that there are not two giant components.
+And that's in fact true.
+If you were to check data and not speculate,
+you would in fact find that you almost never have two giant components.
+In fact, it's interesting to think about have there ever been situations
+where you had two giant components in the world friendship network.
+And in fact, you could argue that at some point in human history,
+it's possible that that was true.
+If we think about say, 10,000 years ago, there's
+been an interesting set of books written to try
+to interpret cultural history from this very long range geographic perspective.
+One example of this is Jared Diamond's book, Guns, Germs, and Steel,
+which Cornell University actually had all
+of the incoming freshman read in 2001.
+And at the time, although we weren't really thinking about it that way,
+we all read this book.
+And you start to appreciate he was sort of making a statement about networks.
+It was really asking us to think about the cataclysm that
+befell the civilizations in the Americas roughly 500 to 1,000 years ago when
+people from Europe began arriving in North and South America,
+and these two cultures began meeting.
+And one way to interpret what it was saying actually
+was that the world, maybe 10,000 years ago, actually,
+the friendship network had two giant components-- one
+in the Europe Asia land mass and one in the Americas.
+And what that meant was that when you had two distinct giant components,
+culture of all separately, technology of all separately, and maybe even worse,
+diseases of all separately.
+And so what happened was when Europeans began meeting people in the Americas
+for the first time, these two giant components being coming together.
+And it really was also a gigantic amount of potential energy was released.
+And in particular, the technology and maybe more importantly,
+the germs of Europeans completely overwhelmed the civilizations
+in the Americas with extremely destructive consequences.
+And so the point here is that when we think
+about a network like the global friendship network
+and we start thinking about the basic graph
+theoretical definitions we have at our disposal,
+we can actually begin to understand stuff about structure that we may not
+have initially a priori thought of.
+And they have been hard to articulate without this kind of language.
+And we can even begin to interpret events over the course of history
+in this kind of language and maybe try to understand better
+why some of these things have turned out the way that they did.

@@ -1,0 +1,176 @@
+
+We've been talking about the strength of weak ties, the often surprising way
+in which connections to people that you're not very close to
+can actually provide you with information,
+with access to parts of the network that you otherwise just
+wouldn't be able to come into contact with.
+Now this was a theory that was worked out,
+as we've been discussing, originally in the 1960s and 1970s.
+And it was really based often on studies performed at relatively small scales
+and with the data analysis performed at relatively small scales.
+As massive social network data sets began
+to emerge in the first decade of the 21st century, 2000 to 2010,
+it began to become possible to actually look
+at the strength of weak ties theory and a number of other theories
+through the lens of these massive online sets of data.
+And so I want to talk about how people do this for the strength of weak ties,
+and in particular, a study done in 2007 by JP Onnela and his colleagues.
+Which, in a way, illustrates a line of work that's become extremely active.
+And that is taking the digital traces that we
+get from online social networking sites, instant messaging, cell phone
+calls, and to build social networks out of them,
+build social networks on millions or even hundreds of millions of people,
+and then to try to study these theories that
+have been developed at much smaller scales.
+And in this way, there's been this interesting interplay
+between two very different styles of research
+around these social phenomenon-- one that works at small scales
+and develops these theories under these complex,
+nuanced settings with limited amounts of data;
+and the other that takes these massive data sets from these digital traces
+and tries to study phenomena at that scale.
+And really, each of these is providing value of a different sort.
+And I think, in the end, one big goal of this whole research enterprise
+is try to find the place where these two styles of research come together
+and where they can actually work together and produce new insights.
+So let's see how this worked with the strength of weak ties.
+So what JP Onnela and his colleagues did was
+to get a cell phone data set from, as they described it,
+a moderately sized European country.
+And so effectively think of several million people,
+all cellphone subscribers.
+And what we have is for each pair of them
+who talked on the phone, how many minutes per month they talked.
+So we can, in a natural way, build a network here.
+And I've drawn sort of a schematic of maybe a small piece of it
+with only nine of these cell phone users.
+And so we draw an edge between each pair of cell phone users
+who talked during the month.
+Now we like to think about the strength of weak ties.
+But we can't really just go in and annotate each edge as strong and weak.
+And that's really the first point that emerges here.
+Often if we have a big messy data set, we
+have to take the clean definitions that we used when we developed our theory,
+and try to adapt it without distorting it too much
+to conform to the kind of data that we're able to look it.
+So in particular, strong and weak was always
+just sort of a binary distinction when there really
+is all sorts of intermediate scales in between.
+And what we're going to do is take the number of minutes people talked
+on the phone and use that effectively as a proxy for the strength of the tie.
+Lots of minutes spent talking on the phone,
+we're going to say indicates a stronger tie.
+Now, it's not a perfect proxy.
+After all, you can feel close to people that you unfortunately
+don't get to talk to very much.
+But it's going to be what we're able to get out of the data.
+More minutes on the phone, stronger tie.
+And so we can imagine annotating the edge with the number of minutes
+that they spent talking on the phone.
+Now the other thing that we have to do is
+we have to look at this notion of local bridges.
+Because effectively, the part of the strength
+of weak ties theory that we would like to investigate
+is this idea that people with stronger ties
+are less likely to be part of local bridges,
+and see how that works out in the data.
+The problem is in this data there actually were unfortunately
+relatively few local bridges.
+Because in the end, often many people had a third party that they talked to.
+So what we'd like to do is actually relax the definition of local bridge
+and talk about certain edges being more local bridgy than others.
+So how would that work in this picture?
+Well, for example, this AB edge, it's not a local bridge
+because to be a local bridge, you have to have no friends in common
+and they have F in common.
+But they do only have one friend in common.
+And so that's sort of close to being a local bridge.
+In particular, it's closer to being a local bridge
+than say this AE edge because A and E have two friends in common, C and D.
+So what we could say is that the embeddedness of the edge
+is the number of mutual friends that the endpoints of the edge have in common.
+AB has embeddedness of one.
+AE has embeddedness of two.
+Now, low embeddedness means you're closer to being a local bridge,
+but it's even more significant if you have
+a low embeddedness among a very, very large number of neighbors.
+And so we're going to find a second concept, the neighborhood overlap,
+which is actually going to be a ratio.
+It's a sort of relative embeddedness.
+So its numerator is the number of nodes who are neighbors of both ends,
+so neighborhood overlap of the AB edge.
+The numerator is the number of common neighbors, which is one in this case.
+And the denominator is the number of nodes
+who were neighbors of either of them, or at least one of them.
+So in this case, there are actually seven nodes
+that are neighbors of at least one of them.
+There's C, D, and E, there's F, and there's G, H, and I.
+So the AB edge has neighborhood overlap of 1 over 7,
+whereas the AE edge has an embeddedness of 2,
+and there are 4 nodes who are neighbors of at least one of them-- C,
+D, B, and F. And so it has a neighborhood overlap of 2 over 4,
+or 1/2.
+So this was the idea.
+We took strength of tie and we took local bridge.
+And we have proxies for them now.
+Number of minutes on the phone becomes a proxy for tie strength,
+and neighborhood overlap becomes a proxy for the notion of being a local bridge.
+It's a kind of softening of it.
+And the thing we would like to test is whether as you
+spend more minutes on the phone talking to someone,
+do you have greater neighborhood overlap?
+Are you further from being a local bridge?
+And this would be the idea that sometimes there's
+a correspondence between being a weak tie-- having few minutes--
+and being close to being a local bridge-- having very low neighborhood
+overlap.
+So we're going to try to plot this.
+So we're going to define a pair of axes.
+And on the x-axis, we're going to put the number of minutes
+you spend talking on the phone.
+So that's a nice quantitative measure.
+And we're going to take everyone who had a certain number of minutes talking
+on the phone and we're going figure out what
+was their average neighborhood overlap.
+And we're going to plot that as the y-coordinate.
+So the y-axis is the neighborhood overlap.
+And if we believe in this theory quantitatively, then what we should see
+is that there's going be a curve that goes up.
+More minutes on the phone, greater neighborhood overlap.
+And so now this is the moment where you have this massive data set,
+you have a theory that you want to test, and you wonder,
+is this really going to work or not?
+And when this data first began coming in, of course, it wasn't clear.
+No one had ever really seen these plots before,
+which was sort of a very striking thing.
+But when these plots began getting produced, they began arriving,
+and we were able to look at them.
+In fact, you see this beautiful, clean, increasing relationship and really,
+very, very smooth.
+Almost as smooth and clear as if it had come out
+of some kind of physical experiment.
+But of course, it hadn't.
+This was just people going about their everyday lives, talking on the phone,
+and being embedded in the social structure
+that they carry out their ordinary lives in.
+But what we find is that when you average over all of that,
+you actually see this very, very clean, clear relationship.
+Greater tie strength, or at least greater amount of time spent together,
+corresponds to greater neighborhood overlap.
+And so this was one of the studies in the early phases
+of looking at these massive data sets and trying
+to understand social phenomena through that lens.
+And as time has gone on, these days have become more rich, more complicated,
+and have begun to connect even more closely
+with the kind of sociological theories that we see at smaller scales as well.
+And it's also become part of the design space.
+So now over the past couple years, for example,
+you see sites like Facebook, for example,
+thinking in terms of strong and weak ties
+when they figure out how to connect you to news from your friends,
+and the different effects that news across these different kind of links
+is going to have.
+And so in this way, it's not simply that these phenomena are being borne out
+in the data sets, but they're actually entering our design space
+as we think about the way information flows
+in both the online world and the offline world.
